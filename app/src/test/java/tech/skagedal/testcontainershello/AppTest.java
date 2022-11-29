@@ -1,4 +1,4 @@
-package se.kry.testcontainershello;
+package tech.skagedal.testcontainershello;
 
 import java.sql.DriverManager;
 import org.junit.jupiter.api.Test;

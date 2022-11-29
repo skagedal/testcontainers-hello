@@ -19,7 +19,7 @@ dependencies {
 }
 
 application {
-    mainClass = 'se.kry.testcontainershello.App'
+    mainClass = 'tech.skagedal.testcontainershello.App'
 }
 
 tasks.named('test') {

@@ -1,4 +1,4 @@
-package se.kry.testcontainershello;
+package tech.skagedal.testcontainershello;
 
 public class App {
 
