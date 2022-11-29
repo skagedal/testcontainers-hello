@@ -11,11 +11,16 @@ def versions = [
 ]
 
 dependencies {
-    testImplementation 'org.slf4j:slf4j-simple:2.0.5'
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
-    testImplementation "org.testcontainers:testcontainers:${versions.testcontainers}"
-    testImplementation "org.testcontainers:mysql:${versions.testcontainers}"
-    testImplementation 'com.mysql:mysql-connector-j:8.0.31'
+    implementation 'org.slf4j:slf4j-simple:2.0.5'
+    implementation 'org.junit.jupiter:junit-jupiter:5.9.1'
+    implementation "org.testcontainers:testcontainers:${versions.testcontainers}"
+    implementation "org.testcontainers:mysql:${versions.testcontainers}"
+    implementation "org.testcontainers:localstack:${versions.testcontainers}"
+    implementation 'com.mysql:mysql-connector-j:8.0.31'
+    implementation platform('software.amazon.awssdk:bom:2.18.25')
+    implementation 'software.amazon.awssdk:s3'
+    // Localstack silently requires this
+    implementation "com.amazonaws:aws-java-sdk-s3:1.11.914"
 }
 
 application {
